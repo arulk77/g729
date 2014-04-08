@@ -1,0 +1,8 @@
+% This program is to genereate the speech encoded value using the 
+% G.729 encoder
+file_name = '1second.wav';
+s=wavread(filein,99*80);
+
+
+
+
