@@ -1,0 +1,13 @@
+Warning:
+ code:     
+ severity: L1
+ open_fcn:   
+ summary:  INFO:Security:67 - XILINXD_LICENSE_FILE is set to '/u/aruls/licenses/xilinx' in /u/aruls/.flexlmrc.
+INFO:Security:71 - If a license for part 'xc6slx100' is available, it will be possible to use 'SysGen_TDP' instead of 'SysGen'.
+WARNING:Security:42 - Your license support version '2014.04' for SysGen expires in 2 days after which you will not qualify for Xilinx software updates or new releases.
+
+ details:  INFO:Security:67 - XILINXD_LICENSE_FILE is set to '/u/aruls/licenses/xilinx' in /u/aruls/.flexlmrc.
+INFO:Security:71 - If a license for part 'xc6slx100' is available, it will be possible to use 'SysGen_TDP' instead of 'SysGen'.
+WARNING:Security:42 - Your license support version '2014.04' for SysGen expires in 2 days after which you will not qualify for Xilinx software updates or new releases.
+
+

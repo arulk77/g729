@@ -1,0 +1,346 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/aruls/projects/phd/g729/design/pre_proc/modelsim
+T_opt
+VAkA@LX`2QWFmePXXDDk0o0
+Z1 04 22 10 work pre_proc_test_cosim_cw structural 1
+Z2 =1--535caaa8-70d95-1a7a
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 n@_opt
+Z5 OL;O;6.5c;42
+T_opt1
+Z6 VN`IVclk7?H51mH1dW?IS20
+R1
+Z7 =1--535caa03-95a34-19f6
+R3
+Z8 n@_opt1
+R5
+Pconv_pkg
+Z9 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z11 w1398581923
+Z12 8pre_proc_test_cosim.vhd
+Z13 Fpre_proc_test_cosim.vhd
+l0
+L40
+Z14 Vf@<ZnZhCD0CEM=ZY>N_UY1
+Z15 OL;C;6.5c;42
+31
+b1
+Z16 Mx2 4 ieee 14 std_logic_1164
+Z17 Mx1 4 ieee 11 numeric_std
+o-93
+Z18 tExplicit 1
+Z19 !s100 YDAfg^V>[3Qja3IbU_@OW1
+Bbody
+Z20 DBx4 work 8 conv_pkg 0 22 f@<ZnZhCD0CEM=ZY>N_UY1
+R9
+R10
+l0
+L207
+Z21 V9i:7F6DPm7XR_5EYz]=^f2
+R15
+31
+R16
+R17
+o-93
+R18
+nbody
+Z22 !s100 3H]DSkHT0D9H6zXi=Z=Yc1
+vpre_proc
+Z23 I15e1B]fQgSfAgUI]NVI4Y2
+Z24 V6U:;eE<YUTgEc_bUNIXSz3
+R11
+Z25 8pre_proc.v
+Z26 Fpre_proc.v
+L0 21
+Z27 OL;L;6.5c;42
+r1
+31
+Z28 o-L mtiAvm -L mtiOvm -L mtiUPF
+Z29 !s100 mMX6VX@z0hK5WImVnA_mk3
+!s85 0
+Z30 !s92 +define+HDL_COSIM=1 -L mtiAvm -L mtiOvm -L mtiUPF
+Epre_proc_test_cosim
+R11
+R9
+Z31 DPx4 work 8 conv_pkg 0 22 f@<ZnZhCD0CEM=ZY>N_UY1
+R10
+R12
+R13
+l0
+L1846
+Z32 VXI;6oaM?hHhJlZM`cJ@dm1
+R15
+31
+o-93
+R18
+Z33 !s100 C4NRk[8mWn`5PjN6nkz_?3
+Astructural
+R9
+R31
+R10
+Z34 DEx4 work 19 pre_proc_test_cosim 0 22 XI;6oaM?hHhJlZM`cJ@dm1
+l1875
+L1855
+Z35 V6Ui33M5z@<TTJ:4TbVm;10
+R15
+31
+Z36 Mx3 4 ieee 14 std_logic_1164
+Z37 Mx2 4 work 8 conv_pkg
+R17
+o-93
+R18
+Z38 !s100 eFPRZi0GTVWIhT>EAzDQ^3
+Epre_proc_test_cosim_clk_drvr
+Z39 w1398581924
+R9
+R31
+R10
+Z40 8pre_proc_test_cosim_cwf.vhd
+Z41 Fpre_proc_test_cosim_cwf.vhd
+l0
+L55
+Z42 VG[noe]P`9`h>4T22f<DB31
+R15
+31
+o-93
+R18
+Z43 !s100 XF=3GAPa;mo=WK<>DNZDd0
+Abehavioral
+R9
+R31
+R10
+Z44 DEx4 work 28 pre_proc_test_cosim_clk_drvr 0 22 G[noe]P`9`h>4T22f<DB31
+l68
+L62
+Z45 VGAOMADzH:IjbPOb=LV`0O1
+R15
+31
+R36
+R37
+R17
+o-93
+R18
+Z46 !s100 3Xc`3^hWXZ04S`BQ9PmP;2
+Epre_proc_test_cosim_cw
+R39
+R9
+R31
+R10
+R40
+R41
+l0
+L86
+Z47 V05DCJ42XdAPbN`K1bWIW_2
+R15
+31
+o-93
+R18
+Z48 !s100 HSD_z]^8VBPC[gGDz@]nI0
+Astructural
+R34
+R44
+R9
+R31
+R10
+Z49 DEx4 work 22 pre_proc_test_cosim_cw 0 22 05DCJ42XdAPbN`K1bWIW_2
+l103
+L93
+Z50 V3S12AkakmkH?lkML8Iz@m0
+R15
+31
+R36
+R37
+R17
+o-93
+R18
+Z51 !s100 PCS2IOfD5B;XP@mL>R9VN0
+Esingle_reg_w_init
+R11
+R9
+R31
+R10
+Z52 DPx6 unisim 11 vcomponents 0 22 m0LZ>RWTBVCGd]LQNcJA:2
+R12
+R13
+l0
+L1695
+Z53 VK[>nEm;YgI5zM]S1>a=d;2
+R15
+31
+o-93
+R18
+Z54 !s100 zjDXjIeao2E4X4J:2e^lH1
+Astructural
+R9
+R31
+R10
+R52
+Z55 DEx4 work 17 single_reg_w_init 0 22 K[>nEm;YgI5zM]S1>a=d;2
+l1751
+L1709
+Z56 VkSB]E<?lHM8j83hjSczVE3
+R15
+31
+Z57 Mx4 6 unisim 11 vcomponents
+R36
+R37
+R17
+o-93
+R18
+Z58 !s100 k;IF5eQ^QKBmW:2n=HZa42
+Esrl17e
+R11
+R9
+R31
+R10
+R52
+R12
+R13
+l0
+L1481
+Z59 VLiUJj^5^nbU[[?ESIcTFW0
+R15
+31
+o-93
+R18
+Z60 !s100 ZL2kEA7JeL0lbZUSZbid@3
+Astructural
+R9
+R31
+R10
+R52
+Z61 DEx4 work 6 srl17e 0 22 LiUJj^5^nbU[[?ESIcTFW0
+l1515
+L1489
+Z62 VlINSCe?cim?]Zc37aA0753
+R15
+31
+R57
+R36
+R37
+R17
+o-93
+R18
+Z63 !s100 knAeY[WzND_?o2H=[JmCA1
+Esynth_reg
+R11
+R9
+R31
+R10
+R12
+R13
+l0
+L1545
+Z64 Va3VPd0`fKZKGhnY8T_QJ^3
+R15
+31
+o-93
+R18
+Z65 !s100 YO4PG2RCH4kPh2N7O=O`^0
+Astructural
+R9
+R31
+R10
+Z66 DEx4 work 9 synth_reg 0 22 a3VPd0`fKZKGhnY8T_QJ^3
+l1582
+L1554
+Z67 V=gKR:QVi>z6BiEQnQ>bc=0
+R15
+31
+R36
+R37
+R17
+o-93
+R18
+Z68 !s100 D<Dhal67obIG^<_j<3ccC2
+Esynth_reg_reg
+R11
+R9
+R31
+R10
+R12
+R13
+l0
+L1609
+Z69 VJHbj`zaa1lk;aJFfSDW>23
+R15
+31
+o-93
+R18
+Z70 !s100 IJza9Ud6IFDTHW1Ge5F103
+Abehav
+R9
+R31
+R10
+Z71 DEx4 work 13 synth_reg_reg 0 22 JHbj`zaa1lk;aJFfSDW>23
+l1628
+L1618
+Z72 V;5[kao757aSE7Rn][7fER0
+R15
+31
+R36
+R37
+R17
+o-93
+R18
+Z73 !s100 dUzgH`d8JoaIN<dYhG>:]1
+Esynth_reg_w_init
+R11
+R9
+R31
+R10
+R52
+R12
+R13
+l0
+L1782
+Z74 Vh22e6>0JWO87D^870h2ej0
+R15
+31
+o-93
+R18
+Z75 !s100 9DiA>A=AckRG@2;Ef9n;b2
+Astructural
+R9
+R31
+R10
+R52
+Z76 DEx4 work 16 synth_reg_w_init 0 22 h22e6>0JWO87D^870h2ej0
+l1814
+L1797
+Z77 VldASZfP3K0[OeQ=[gFZ[N2
+R15
+31
+R57
+R36
+R37
+R17
+o-93
+R18
+Z78 !s100 OfH3?mOW8>[JYAFLCL>?L1
+Exlcosim_fli_controller
+R39
+R40
+R41
+l0
+L3
+Z79 V1a^GTeme25lPze<>f554P2
+R15
+31
+o-93
+R18
+Z80 !s100 Aof=OU5jXP@Bfm14]kcZA0
+Aonly
+Z81 DEx4 work 22 xlcosim_fli_controller 0 22 1a^GTeme25lPze<>f554P2
+l11
+L7
+Z82 Vc8h<QKO?4DmaC@@GWHR>Y1
+R15
+31
+o-93
+R18
+Z83 !s100 F1mc9OL6cPn7^LM^n2]=00

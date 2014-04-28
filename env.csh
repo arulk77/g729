@@ -19,3 +19,9 @@ alias cdb   "cd ${PROJ_DIR}/bin"
 
 ## Other paths
 alias gvim 'gvim -c "set tags=vim.tags" '
+
+## Alias for sourcing the tools
+alias setmentor "source /u/tools/digital/setup/mentor"
+alias setxil    "source /home/tools/Xilinx/14.7/ISE_DS/settings64.csh" 
+alias setmat    "source /u/aruls/.user/matlab.csh" 
+alias sett      "setxil; setmat; setmentor;"

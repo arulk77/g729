@@ -1,0 +1,105 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 14.7 (P.20131013)
+   \   \         APPLICATION : /home/tools/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/compxlib
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 14.7 - /home/tools/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/compxlib 14.7 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Library Source Paths => '/home/tools/Xilinx/14.7/ISE_DS/ISE'
+Current Working Directory => '/home/aruls/projects/phd/g729/lib'
+Compilation Mode = FAST
+Execute Mode = ON
+Scheduling library installation & compilation for architectures: all
+
+Scheduling library installation & compilation for libraries: all
+
+Signature:-
+------------------------------------------------------------------------------
+/home/tools/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/compxlib -arch all -lib all -s mti_se -dir xilinx_lib 
+------------------------------------------------------------------------------
+
+Setting up the simulator 'mti_se' for compilation ...
+The executable path is set to '/u/tools/digital/modelsim/modeltech/bin' ...
+Setting up the source libraries for simulator 'mti_se' ...
+Retrieving the .pao files for EDK library ...
+Building the library hierarchies from the .pao files for EDK library ...
+Assigning the netlist files to the hierarchies for EDK library ...
+
+
+
+Compiling Xilinx HDL Libraries for 'mti_se' simulator
+Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+Language => 'vhdl,verilog'
+Output directory => '/home/aruls/projects/phd/g729/lib/xilinx_lib'
+
+WARNING:Compxlib:312 - Output directory '/home/aruls/projects/phd/g729/lib/xilinx_lib' does not exist, it will be created.
+Directory '/home/aruls/projects/phd/g729/lib/xilinx_lib' is created.
+
+Library verilog.secureip will be compiled, because no precompiled info.
+--> Compiling verilog.secureip library ...
+    > verilog.secureip library compiled from /home/tools/Xilinx/14.7/ISE_DS/ISE/secureip/mti
+    > verilog.secureip library compiled to /home/aruls/projects/phd/g729/lib/xilinx_lib/secureip
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:verilog:secureip)
+Modifying modelsim.ini
+
+Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+** Error: (vlog-1902) Option "-32" is either unknown, requires an argument, or was given with a bad argument.
+Use the -help option for complete vlog usage.
+
+
+END_COMPILATION_MESSAGES(mti_se:verilog:secureip)
+==============================================================================
+    > Log file '/home/aruls/projects/phd/g729/lib/xilinx_lib/secureip/.cxl.verilog.secureip.secureip.lin.log' generated
+compxlib[verilog.secureip]: 1 error(s), 0 warning(s), 9.09 % complete
+
+
+INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:verilog:secureip)' and 'END_COMPILATION_MESSAGES(mti_se:verilog:secureip)' in the log file compxlib.log for details of compilation error(s).
+
+
+Library vhdl.unisim will be compiled, because no precompiled info.
+--> Compiling vhdl.unisim library ...
+    > vhdl.unisim library compiled from /home/tools/Xilinx/14.7/ISE_DS/ISE/vhdl/src/unisims
+    > vhdl.unisim library compiled to /home/aruls/projects/phd/g729/lib/xilinx_lib/unisim
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:unisim)
+Modifying modelsim.ini
+
+Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+** Error: (vcom-1902) Option "-32" is either unknown, requires an argument, or was given with a bad argument.
+Use the -help option for complete vcom usage.
+
+
+END_COMPILATION_MESSAGES(mti_se:vhdl:unisim)
+==============================================================================
+    > Log file '/home/aruls/projects/phd/g729/lib/xilinx_lib/unisim/.cxl.vhdl.unisim.unisim.lin.log' generated
+
+Library vhdl.unisim:vhdl.unimacro will be compiled, because no precompiled info.
+--> Compiling vhdl.unisim:vhdl.unimacro library ...
+    > vhdl.unisim:vhdl.unimacro library compiled from /home/tools/Xilinx/14.7/ISE_DS/ISE/vhdl/src/unimacro
+    > vhdl.unisim:vhdl.unimacro library compiled to /home/aruls/projects/phd/g729/lib/xilinx_lib/unimacro
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:unimacro)
+Modifying modelsim.ini
+
+Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+** Error: (vcom-1902) Option "-32" is either unknown, requires an argument, or was given with a bad argument.
+Use the -help option for complete vcom usage.
+
+
+END_COMPILATION_MESSAGES(mti_se:vhdl:unimacro)
+==============================================================================
+    > Log file '/home/aruls/projects/phd/g729/lib/xilinx_lib/unimacro/.cxl.vhdl.unimacro.unimacro.lin.log' generated
+compxlib[vhdl.unisim:vhdl.unimacro]: 1 error(s), 0 warning(s)
+
+INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:unimacro)' and 'END_COMPILATION_MESSAGES(mti_se:vhdl:unimacro)' in the log file compxlib.log for details of compilation error(s).
+
+
+Library vhdl.unisim:vhdl.secureip_vhdl_unisim will be compiled, because no precompiled info.

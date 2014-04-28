@@ -1,0 +1,63 @@
+m255
+K3
+cModel Technology Builtin Library
+13
+Z0 dD:\qa\buildsites\6.5c\builds\win32\modeltech
+Pvl_resolve
+Z1 OL;C;6.5c;42
+31
+b1
+Z2 OP;C;6.5c;42
+Z3 w1251437695
+Z4 d$MODEL_TECH/..
+Z5 8vhdl_src/verilog/vlresolve.vhd
+Z6 Fvhdl_src/verilog/vlresolve.vhd
+l0
+L9
+VY34A9EG`YQ@5U`Y4mOCWT3
+Z7 OE;C;6.5c;42
+Z8 o-93 -work verilog -dirpath {$MODEL_TECH/..}
+Z9 tExplicit 1
+!s100 RiUm8c9^c0]k:0M11f9KY0
+Bbody
+DBx4 work 10 vl_resolve 0 22 Y34A9EG`YQ@5U`Y4mOCWT3
+R1
+31
+R2
+l0
+L16
+V[Hk04aab5R<fBKUa1bea=2
+R7
+R8
+R9
+nbody
+!s100 A7__7z;<JIYkZOSzn:dCY2
+Pvl_types
+R1
+31
+b1
+R2
+R3
+R4
+Z10 8vhdl_src/verilog/vltypes.vhd
+Z11 Fvhdl_src/verilog/vltypes.vhd
+l0
+L9
+VEL`7Km5528[`SUe@0N=SW0
+R7
+R8
+R9
+!s100 _07d3h_S4EB@2EmNBkzmA3
+Bbody
+DBx4 work 8 vl_types 0 22 EL`7Km5528[`SUe@0N=SW0
+R1
+31
+R2
+l0
+L101
+VRVba`dZz<efKd;P8Y<8B10
+R7
+R8
+R9
+nbody
+!s100 K:VQzQNIUN7K`?Y:aYHZc3
