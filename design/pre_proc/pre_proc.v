@@ -30,7 +30,7 @@ parameter mult_f = 16'd26000;
 wire [15:0] const_coeff = mult_f;
 
 initial begin
-  pre_proc_audio = 16'hffff;
+  pre_proc_audio = 16'h0;
 end
 	 
 always @(posedge clk) begin
