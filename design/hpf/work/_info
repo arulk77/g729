@@ -1,0 +1,20 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/aruls/projects/phd/g729/design/hpf
+vhigh_pass_filter
+!s100 _kfW9f`_Gin?YMY?<=knF1
+IlARlaLNdAARfeRJ0nHkoY3
+VO4cSCC8nBJG5?CM_L=XKo0
+w1399942950
+8high_pass_filter.v
+Fhigh_pass_filter.v
+F./../arith/fixed_point_arith.v
+L0 21
+OL;L;6.5c;42
+r1
+!s85 0
+31
+o-L mtiAvm -L mtiOvm -L mtiUPF
+!s92 +incdir+./../arith -L mtiAvm -L mtiOvm -L mtiUPF
