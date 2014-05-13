@@ -1,0 +1,12 @@
+## Generic files to ignore
+*.autosoave
+*~
+*.cgv.sm
+*.cgv
+*.hgv
+*.csv
+*.lock
+*.swp
+*.swo
+*.nfs*
+*#*
