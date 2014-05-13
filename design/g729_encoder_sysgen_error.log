@@ -8,24 +8,22 @@ Summary of Errors:
 Error 0001: 
 --- ModelSim reported errors during compilation.
 The fol...
-     Block: 'g729_encoder/pre_proc'
+     Block: 'g729_encoder/High Pass Filter'
 --------------------------------------------------------------------------------
 
 Error 0001:
 
 Reported by:
-  'g729_encoder/pre_proc'
+  'g729_encoder/High Pass Filter'
 
 Details:
 
 --- ModelSim reported errors during compilation.
 The following errors were found in
 /home/aruls/projects/phd/g729/design/modelsim/transcript :
-# ** Error: g729_encoder_cosim.vhd(1475): Library unisim not found.
-# ** Error: g729_encoder_cosim.vhd(1476): (vcom-1136) Unknown
-identifier "unisim".
-# ** Error: g729_encoder_cosim.vhd(1481): VHDL Compiler exiting
-# ** Error: /u/tool0/digital/modelsim/modeltech/linux_x86_64/vcom failed.
+# ** Error: g729_encoder_cosim.vhd(1890): Bad default binding for
+component instance "high_pass_filter_x0 : high_pass_filter".
+# ** Error: g729_encoder_cosim_cwf.vhd(62): Vopt Compiler exiting
 
 Error occurred during "Simulation Initialization".
 
