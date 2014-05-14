@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.23"
+    ComputedModelVersion    "1.25"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -30,7 +30,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [15.0, 11.0, 2013.0, 1014.0]
+      Location		      [11.0, 0.0, 2021.0, 1043.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -52,21 +52,21 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1255.0, 695.0]
+	  Extents		  [1782.0, 859.0]
 	  ZoomFactor		  [1.5]
-	  Offset		  [-117.4261904761909, 90.583333333333314]
+	  Offset		  [-117.42619047619087, 90.583333333333314]
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "11"
-	  Extents		  [1774.0, 830.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-75.583333333332575, 0.66666666666537822]
+	  Extents		  [1782.0, 859.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [79.166666666667425, 6.0]
 	}
 	PropName		"EditorsInfo"
       }
@@ -78,9 +78,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "aruls"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue May 13 08:29:43 2014"
-  RTWModifiedTimeStamp	  321870581
-  ModelVersionFormat	  "1.%<AutoIncrement:23>"
+  LastModifiedDate	  "Tue May 13 20:47:36 2014"
+  RTWModifiedTimeStamp	  321914816
+  ModelVersionFormat	  "1.%<AutoIncrement:25>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -771,19 +771,6 @@ Model {
   }
   BlockParameterDefaults {
     Block {
-      BlockType		      Constant
-      Value		      "1"
-      VectorParams1D	      on
-      SamplingMode	      "Sample based"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
-      LockScale		      off
-      SampleTime	      "inf"
-      FramePeriod	      "inf"
-      PreserveConstantTs      off
-    }
-    Block {
       BlockType		      FromFile
       FileName		      "untitled.mat"
       OutDataTypeStr	      "Inherit: auto"
@@ -879,13 +866,10 @@ Model {
       Variant		      off
       GeneratePreprocessorConditionals off
     }
-    Block {
-      BlockType		      Terminator
-    }
   }
   System {
     Name		    "g729_encoder_test"
-    Location		    [15, 11, 1509, 890]
+    Location		    [11, 0, 2032, 1043]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -974,7 +958,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"G729_encoder"
-	Location		[15, 11, 2028, 1025]
+	Location		[11, 0, 2032, 1043]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -986,7 +970,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
+	ZoomFactor		"100"
 	Block {
 	  BlockType		  Inport
 	  Name			  "audio_sample"
@@ -1003,13 +987,6 @@ Model {
 	  ZOrder		  1
 	  Port			  "2"
 	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Constant
-	  Name			  "Constant"
-	  SID			  "26"
-	  Position		  [445, 275, 475, 305]
-	  ZOrder		  30
 	}
 	Block {
 	  BlockType		  Reference
@@ -1077,50 +1054,6 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "FIFO"
-	  SID			  "25"
-	  Ports			  [5, 5]
-	  Position		  [665, 113, 745, 227]
-	  ZOrder		  29
-	  LibraryVersion	  "1.2"
-	  SourceBlock		  "xbsIndex_r4/FIFO"
-	  SourceType		  "Xilinx FIFO Block Block"
-	  mem_type		  "Block RAM"
-	  performance_options	  "Standard_FIFO"
-	  infoedit1		  "Available only for V4, V5, V6, V7, K7, A7 and Zynq devices."
-	  embedded_registers	  off
-	  depth			  "512K"
-	  percent_nbits		  "10"
-	  rst			  on
-	  en			  on
-	  use_dcount		  off
-	  use_percent_full_port	  on
-	  use_almost_empty	  on
-	  almost_empty_thresh	  "2"
-	  use_almost_full	  off
-	  almost_full_thresh	  "14"
-	  dbl_ovrd		  off
-	  xl_use_area		  off
-	  xl_area		  "[0,0,0,0,0,0,0]"
-	  explicit_period	  "off"
-	  has_advanced_control	  "0"
-	  sggui_pos		  "20,20,504,791"
-	  block_type		  "fifo"
-	  sg_icon_stat		  "80,114,5,5,white,blue,0,f9a8b01a,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 80 80 0 0 ],[0 0 114 114 0 ],[0.77 0.82 0."
-	  "91 ]);\nplot([0 80 80 0 0 ],[0 0 114 114 0 ]);\npatch([15.525 31.42 42.42 53.42 64.42 42.42 26.525 15.525 ],[69.21 "
-	  "69.21 80.21 69.21 80.21 80.21 80.21 69.21 ],[1 1 1 ]);\npatch([26.525 42.42 31.42 15.525 26.525 ],[58.21 58.21 69.2"
-	  "1 69.21 58.21 ],[0.931 0.946 0.973 ]);\npatch([15.525 31.42 42.42 26.525 15.525 ],[47.21 47.21 58.21 58.21 47.21 ],"
-	  "[1 1 1 ]);\npatch([26.525 64.42 53.42 42.42 31.42 15.525 26.525 ],[36.21 36.21 47.21 36.21 47.21 47.21 36.21 ],[0.9"
-	  "31 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('blac"
-	  "k');port_label('input',1,'din');\ncolor('black');port_label('input',2,'we');\ncolor('black');port_label('input',3,'"
-	  "re');\ncolor('black');port_label('input',4,'rst');\ncolor('black');port_label('input',5,'en');\ncolor('black');port"
-	  "_label('output',1,'dout');\ncolor('black');port_label('output',2,'empty');\ncolor('black');port_label('output',3,'%"
-	  "full');\ncolor('black');port_label('output',4,'full');\ncolor('black');port_label('output',5,'ae');\nfprintf('','CO"
-	  "MMENT: end icon text');"
-	}
-	Block {
-	  BlockType		  Reference
 	  Name			  "High Pass Filter"
 	  SID			  "16"
 	  Ports			  [2, 1]
@@ -1172,7 +1105,7 @@ Model {
 	  use_unisim		  off
 	  use_ver_xilinxcorelib	  off
 	  custom_scripts	  on
-	  post_vsim_script	  "my.do"
+	  post_vsim_script	  "after_vsim.do"
 	  startup_timeout	  "40"
 	  has_advanced_control	  "0"
 	  sggui_pos		  "20,20,348,419"
@@ -1187,24 +1120,10 @@ Model {
 	  " text');fprintf('ModelSim');\n"
 	}
 	Block {
-	  BlockType		  Terminator
-	  Name			  "Terminator"
-	  SID			  "27"
-	  Position		  [905, 215, 925, 235]
-	  ZOrder		  31
-	}
-	Block {
-	  BlockType		  Terminator
-	  Name			  "Terminator1"
-	  SID			  "28"
-	  Position		  [905, 265, 925, 285]
-	  ZOrder		  32
-	}
-	Block {
 	  BlockType		  Outport
 	  Name			  "Out1"
 	  SID			  "13"
-	  Position		  [1090, 118, 1120, 132]
+	  Position		  [715, 123, 745, 137]
 	  ZOrder		  -2
 	  IconDisplay		  "Port number"
 	}
@@ -1227,60 +1146,17 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "High Pass Filter"
+	  SrcBlock		  "Down Sample1"
 	  SrcPort		  1
-	  DstBlock		  "FIFO"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "Constant"
-	  SrcPort		  1
-	  Points		  [112, 0; 0, -140]
-	  DstBlock		  "FIFO"
+	  Points		  [50, 0; 0, -35]
+	  DstBlock		  "High Pass Filter"
 	  DstPort		  2
 	}
 	Line {
-	  SrcBlock		  "FIFO"
-	  SrcPort		  3
-	  Points		  [9, 0; 0, 83; -109, 0]
-	  DstBlock		  "FIFO"
-	  DstPort		  3
-	}
-	Line {
-	  SrcBlock		  "FIFO"
+	  SrcBlock		  "High Pass Filter"
 	  SrcPort		  1
-	  Points		  [0, -5]
 	  DstBlock		  "Out1"
 	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "FIFO"
-	  SrcPort		  2
-	  Points		  [82, 0; 0, 75]
-	  DstBlock		  "Terminator"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "FIFO"
-	  SrcPort		  4
-	  Points		  [46, 0; 0, 85]
-	  DstBlock		  "Terminator1"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "Down Sample1"
-	  SrcPort		  1
-	  Points		  [50, 0]
-	  Branch {
-	    Points		    [0, -35]
-	    DstBlock		    "High Pass Filter"
-	    DstPort		    2
-	  }
-	  Branch {
-	    Points		    [0, 5]
-	    DstBlock		    "FIFO"
-	    DstPort		    4
-	  }
 	}
       }
     }
