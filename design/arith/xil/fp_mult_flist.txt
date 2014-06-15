@@ -1,0 +1,13 @@
+# Output products list for <fp_mult>
+fp_mult/doc/floating_point_ds335.pdf
+fp_mult/doc/floating_point_v5_0_readme.txt
+fp_mult/doc/floating_point_v5_0_vinfo.html
+fp_mult.asy
+fp_mult.gise
+fp_mult.ngc
+fp_mult.v
+fp_mult.veo
+fp_mult.xco
+fp_mult.xise
+fp_mult_flist.txt
+fp_mult_xmdf.tcl

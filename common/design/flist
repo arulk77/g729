@@ -1,0 +1,6 @@
+/home/aruls/projects/phd/g729/common/design/ram/single_port_ram.v
+/home/aruls/projects/phd/g729/common/design/sync/sync_d2d.v
+/home/aruls/projects/phd/g729/common/design/sync/sync_d2d_bus.v
+/home/aruls/projects/phd/g729/common/design/sync/sync_m2d.v
+/home/aruls/projects/phd/g729/common/design/sync/sync_t2p.v
+/home/aruls/projects/phd/g729/common/design/fifo/async_fifo.v

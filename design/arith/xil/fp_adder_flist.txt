@@ -1,0 +1,13 @@
+# Output products list for <fp_adder>
+fp_adder/doc/floating_point_ds335.pdf
+fp_adder/doc/floating_point_v5_0_readme.txt
+fp_adder/doc/floating_point_v5_0_vinfo.html
+fp_adder.asy
+fp_adder.gise
+fp_adder.ngc
+fp_adder.v
+fp_adder.veo
+fp_adder.xco
+fp_adder.xise
+fp_adder_flist.txt
+fp_adder_xmdf.tcl

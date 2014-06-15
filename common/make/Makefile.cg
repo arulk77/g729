@@ -1,0 +1,93 @@
+## Room to create any variables 
+CSV_SEPERATOR := "@"
+
+## Make file to create the verilog file
+XLS_FILES := $(wildcard *.xls) 
+XML_FILES := $(wildcard *.xml) 
+CSV_FILES := $(XLS_FILES:.xls=.csv) 
+CSV_FILES := $(CSV_FILES) $(XML_FILES:.xml=.csv) 
+VER_FILES := $(CSV_FILES:.csv=.v)
+CGV_FILES := $(CSV_FILES:.csv=.cgv)
+HGV_FILES := $(CSV_FILES:.csv=.hgv)
+SM_FILES  := $(CSV_FILES:.csv=.cgv.sm)
+TAG_FILES := $(wildcard *.tags TAGS)
+PERL_FILES := $(wildcard $(PROJ_DIR)/bin/*.pl)
+
+## Create a PHONY list
+.PHONY :: all clean build_csv build_ver build_des TAGS build_tags 
+
+## For all xls file create the csv file
+## If the PERL_xls2csv is used then use the following
+%.csv :: %.xls $(PERL_FILES)
+ifdef PERL_XLS2CSV
+	rm -f $@;\
+	ws=`xls2csv -x $< -W | grep -v Now | grep -v The`;\
+ 	for w in $$ws;\
+ 	do \
+	  fn=`echo $< | awk -F . '{print $$1}'`;\
+	  cn="$${fn}_$${w}.csv";\
+	  xls2csv -x $< -w $$w -c $${cn};\
+	  echo "CGKS:$$w" >> $@;cat $${cn} >> $@;echo "CGKE:$$w" >> $@;\
+	  rm $${cn};\
+ 	done
+else
+## The default linux xls2csv if used
+	rm -f $@;\
+	xls2csv -c$(CSV_SEPERATOR) $< > $@;
+
+endif
+
+%.csv :: %.xml $(PERL_FILES)
+	xml2csv.pl -csv_sep $(CSV_SEPERATOR) -xml $< 
+
+## Whenever a CSV file is created a touch is made
+%.hgv:: %.csv
+	if [ -s $*.v ]; then \
+	  perl -n -e 'if(/CGKS:HAND_GENERATED/../CGKE:HAND_GENERATED/){ print $$_ if(!/CGK[SE]:HAND_GENERATED/);}' < $*.v > $@ ; \
+	else \
+	  touch $@;\
+	fi
+
+## Create verilog files for all the CSV files 
+%.v :: %.hgv
+ifdef CG_STD_OUT
+	cg.pl $(CG_OPT) -csv_sep $(CSV_SEPERATOR) -path $${CG_SEARCH_PATH} -csv $*.csv -hdr ${HDR_DIR}/design_header.txt > $*.cgv;
+else
+	cg.pl $(CG_OPT) -csv_sep $(CSV_SEPERATOR) -path $${CG_SEARCH_PATH} -csv $*.csv -hdr ${HDR_DIR}/design_header.txt -ver $*.cgv;
+endif
+	## Recreate the verilog file
+	cat $*.cgv > $@; \
+	echo "//CGKS:HAND_GENERATED" >> $@;\
+	if [ -s $*.hgv ]; then \
+	  cat $*.hgv >> $@; \
+	fi
+	echo "//CGKE:HAND_GENERATED" >> $@;\
+	echo "endmodule" >> $@;
+
+## Clean up the directory (Note: Do not remove the verilog file)
+clean::
+	-rm -f $(CSV_FILES) $(CGV_FILES) $(HGV_FILES) $(TAG_FILES) $(SM_FILES)
+
+## Create the CSV file 
+build_csv:: $(CSV_FILES) 
+
+## Create the verilog files 
+build_ver:: $(VER_FILES) 
+
+## Segregate hand generated verilog file
+build_hgv:: $(HGV_FILES)
+
+## Build all the csv files and verilog files
+build_des:: build_csv build_hgv build_ver
+
+## Build tags for all the files
+vim.tags:: $(VER_FILES) 
+	find ./ -type f -name "*?.v" | grep -v ".hg.v" | grep -v ".cg.v" | xargs ctags -f vim.tags; 
+
+TAGS :: $(VER_fILES) 
+	find ./ -type f -name "*?.v" | grep -v ".hg.v" | grep -v ".cg.v" | xargs ctags -e -f TAGS; 
+
+build_tags :: TAGS vim.tags
+
+## clean and cl
+all:: build_des

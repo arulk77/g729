@@ -3,8 +3,20 @@ K3
 13
 cModel Technology
 Z0 d/home/aruls/projects/phd/g729/design/hpf
+vdwn_sampler
+!s100 Ge5`bmEoGGB;KV2TYa^bA0
+IbR7:T9k@lCbM<e9Y3VZn42
+V2a2??m5TRPAiJOSU]ZmTV0
+w1402857467
+8dwn_sampler.v
+Fdwn_sampler.v
+L0 7
+Z1 OL;L;6.5c;42
+r1
+!s85 0
+31
+Z2 o-L mtiAvm -L mtiOvm -L mtiUPF
 vhigh_pass_filter
-!s100 _kfW9f`_Gin?YMY?<=knF1
 IlARlaLNdAARfeRJ0nHkoY3
 VO4cSCC8nBJG5?CM_L=XKo0
 w1399942950
@@ -12,9 +24,10 @@ w1399942950
 Fhigh_pass_filter.v
 F./../arith/fixed_point_arith.v
 L0 21
-OL;L;6.5c;42
+R1
 r1
-!s85 0
 31
-o-L mtiAvm -L mtiOvm -L mtiUPF
+R2
+!s100 _kfW9f`_Gin?YMY?<=knF1
+!s85 0
 !s92 +incdir+./../arith -L mtiAvm -L mtiOvm -L mtiUPF

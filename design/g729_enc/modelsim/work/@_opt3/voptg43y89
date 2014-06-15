@@ -1,0 +1,374 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/aruls/projects/phd/g729/design/g729_enc/modelsim
+T_opt
+Z1 Vd94<@gSD25Ugl64aFXR0f1
+Z2 04 26 10 work g729_encoder_test_cosim_cw structural 1
+Z3 =1--53722dd5-e5cac-6ce3
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.5c;42
+T_opt1
+Z7 V<;@;@0W3J>V]DzgJA6ZVM0
+R2
+Z8 =1--5373e9d3-1c961-6da5
+R4
+Z9 n@_opt1
+R6
+T_opt2
+Z10 VPBGS<iLPO=c?9MPgg_C5?0
+R2
+Z11 =1--5373ea62-36ce6-6e4d
+R4
+Z12 n@_opt2
+R6
+T_opt3
+Z13 VlVXCQ>A2>DSoem=nK^o3e2
+R2
+Z14 =1--5373ead7-f3129-6ede
+R4
+Z15 n@_opt3
+R6
+T_opt4
+Z16 V[M3=@2IKjmJgF>o>JkP9W3
+R2
+Z17 =1--5373c9c8-a5b50-4ad9
+R4
+Z18 n@_opt4
+R6
+Pconv_pkg
+Z19 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z20 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z21 w1400105682
+Z22 8g729_encoder_test_cosim.vhd
+Z23 Fg729_encoder_test_cosim.vhd
+l0
+L40
+Z24 Vf@<ZnZhCD0CEM=ZY>N_UY1
+Z25 OL;C;6.5c;42
+31
+b1
+Z26 Mx2 4 ieee 14 std_logic_1164
+Z27 Mx1 4 ieee 11 numeric_std
+o-93
+Z28 tExplicit 1
+Z29 !s100 YDAfg^V>[3Qja3IbU_@OW1
+Bbody
+Z30 DBx59 /home/aruls/projects/phd/g729/design/g729_enc/modelsim/work 8 conv_pkg 0 22 f@<ZnZhCD0CEM=ZY>N_UY1
+Z31 DPx17 __model_tech/ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z32 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+31
+Z33 Mx2 17 __model_tech/ieee 14 std_logic_1164
+Z34 Mx1 17 __model_tech/ieee 11 numeric_std
+l0
+L207
+Z35 V9i:7F6DPm7XR_5EYz]=^f2
+R25
+o-93
+R28
+nbody
+Z36 !s100 3H]DSkHT0D9H6zXi=Z=Yc1
+Z37 w1400096733
+Eg729_encoder_test_cosim
+R21
+R31
+Z38 DPx59 /home/aruls/projects/phd/g729/design/g729_enc/modelsim/work 8 conv_pkg 0 22 f@<ZnZhCD0CEM=ZY>N_UY1
+R32
+31
+R22
+R23
+l0
+L1846
+Z39 VFSP9l7d2Cg2UEBcP9XijL1
+R25
+o-93
+R28
+Z40 !s100 aSZAXhJ==mg8`[[nOg=<E2
+Astructural
+Z41 DEx59 /home/aruls/projects/phd/g729/design/g729_enc/modelsim/work 16 high_pass_filter 0 22 V>QMdV7OD;WJX^U7bN?=N3
+R31
+R38
+R32
+Z42 DEx59 /home/aruls/projects/phd/g729/design/g729_enc/modelsim/work 23 g729_encoder_test_cosim 0 22 FSP9l7d2Cg2UEBcP9XijL1
+31
+Z43 Mx3 17 __model_tech/ieee 14 std_logic_1164
+Z44 Mx2 59 /home/aruls/projects/phd/g729/design/g729_enc/modelsim/work 8 conv_pkg
+R34
+l1875
+L1856
+Z45 VI?L`MRZ16Wf8`OXgkf1[z2
+R25
+o-93
+R28
+Z46 !s100 6bi3XlVE4gf@3eS^U<]`k0
+Eg729_encoder_test_cosim_clk_drvr
+Z47 w1400105683
+R19
+Z48 DPx4 work 8 conv_pkg 0 22 f@<ZnZhCD0CEM=ZY>N_UY1
+R20
+Z49 8g729_encoder_test_cosim_cwf.vhd
+Z50 Fg729_encoder_test_cosim_cwf.vhd
+l0
+L55
+Z51 V:E[PBTOMLMAUIjoiJb[F^0
+R25
+31
+o-93
+R28
+Z52 !s100 GRQETT0d4z9l3f4>7Z`F11
+Abehavioral
+R31
+R38
+R32
+Z53 DEx59 /home/aruls/projects/phd/g729/design/g729_enc/modelsim/work 32 g729_encoder_test_cosim_clk_drvr 0 22 :E[PBTOMLMAUIjoiJb[F^0
+31
+R43
+R44
+R34
+l69
+L62
+Z54 VAOfAF`fC=;O@;RWi41`YZ0
+R25
+o-93
+R28
+Z55 !s100 S2T=d4cazW[d0_aWEU1in0
+Z56 w1400096735
+Eg729_encoder_test_cosim_cw
+R47
+R31
+R38
+R32
+31
+R49
+R50
+l0
+L96
+Z57 V7?kcECV]ba?VPnn3`MN9m3
+R25
+o-93
+R28
+Z58 !s100 MM_BTInBc0SO60oRM9PBY3
+Astructural
+Z59 DEx59 /home/aruls/projects/phd/g729/design/g729_enc/modelsim/work 22 xlcosim_fli_controller 0 22 1a^GTeme25lPze<>f554P2
+R53
+R42
+R31
+R38
+R32
+Z60 DEx59 /home/aruls/projects/phd/g729/design/g729_enc/modelsim/work 26 g729_encoder_test_cosim_cw 0 22 7?kcECV]ba?VPnn3`MN9m3
+31
+R43
+R44
+R34
+l115
+L104
+Z61 VMXC[DVFkF74_J:EKzhTme2
+Z62 !s100 `fNWg6==C5V0EB`V7CT3@0
+R25
+o-93
+R28
+vhigh_pass_filter
+R21
+Z63 Io5bM:m9@Lg=4Q6H;SMCPN3
+Z64 VV>QMdV7OD;WJX^U7bN?=N3
+Z65 8high_pass_filter.v
+Z66 Fhigh_pass_filter.v
+Z67 Ffixed_point_arith.v
+L0 21
+Z68 OL;L;6.5c;42
+r1
+31
+Z69 o-L mtiAvm -L mtiOvm -L mtiUPF
+Z70 !s100 aJERMHBdE<E87?hRg[9;W0
+Z71 !s92 +define+HDL_COSIM=1 -L mtiAvm -L mtiOvm -L mtiUPF
+!s85 0
+Esingle_reg_w_init
+R21
+R19
+R48
+R20
+Z72 DPx6 unisim 11 vcomponents 0 22 m0LZ>RWTBVCGd]LQNcJA:2
+R22
+R23
+l0
+L1695
+Z73 VK[>nEm;YgI5zM]S1>a=d;2
+R25
+31
+o-93
+R28
+Z74 !s100 zjDXjIeao2E4X4J:2e^lH1
+Astructural
+R19
+R48
+R20
+R72
+Z75 DEx4 work 17 single_reg_w_init 0 22 K[>nEm;YgI5zM]S1>a=d;2
+l1751
+L1709
+Z76 VkSB]E<?lHM8j83hjSczVE3
+R25
+31
+Z77 Mx4 6 unisim 11 vcomponents
+Z78 Mx3 4 ieee 14 std_logic_1164
+Z79 Mx2 4 work 8 conv_pkg
+R27
+o-93
+R28
+Z80 !s100 k;IF5eQ^QKBmW:2n=HZa42
+Esrl17e
+R21
+R19
+R48
+R20
+R72
+R22
+R23
+l0
+L1481
+Z81 VLiUJj^5^nbU[[?ESIcTFW0
+R25
+31
+o-93
+R28
+Z82 !s100 ZL2kEA7JeL0lbZUSZbid@3
+Astructural
+R19
+R48
+R20
+R72
+Z83 DEx4 work 6 srl17e 0 22 LiUJj^5^nbU[[?ESIcTFW0
+l1515
+L1489
+Z84 VlINSCe?cim?]Zc37aA0753
+R25
+31
+R77
+R78
+R79
+R27
+o-93
+R28
+Z85 !s100 knAeY[WzND_?o2H=[JmCA1
+Esynth_reg
+R21
+R19
+R48
+R20
+R22
+R23
+l0
+L1545
+Z86 Va3VPd0`fKZKGhnY8T_QJ^3
+R25
+31
+o-93
+R28
+Z87 !s100 YO4PG2RCH4kPh2N7O=O`^0
+Astructural
+R19
+R48
+R20
+Z88 DEx4 work 9 synth_reg 0 22 a3VPd0`fKZKGhnY8T_QJ^3
+l1582
+L1554
+Z89 V=gKR:QVi>z6BiEQnQ>bc=0
+R25
+31
+R78
+R79
+R27
+o-93
+R28
+Z90 !s100 D<Dhal67obIG^<_j<3ccC2
+Esynth_reg_reg
+R21
+R19
+R48
+R20
+R22
+R23
+l0
+L1609
+Z91 VJHbj`zaa1lk;aJFfSDW>23
+R25
+31
+o-93
+R28
+Z92 !s100 IJza9Ud6IFDTHW1Ge5F103
+Abehav
+R19
+R48
+R20
+Z93 DEx4 work 13 synth_reg_reg 0 22 JHbj`zaa1lk;aJFfSDW>23
+l1628
+L1618
+Z94 V;5[kao757aSE7Rn][7fER0
+R25
+31
+R78
+R79
+R27
+o-93
+R28
+Z95 !s100 dUzgH`d8JoaIN<dYhG>:]1
+Esynth_reg_w_init
+R21
+R19
+R48
+R20
+R72
+R22
+R23
+l0
+L1782
+Z96 Vh22e6>0JWO87D^870h2ej0
+R25
+31
+o-93
+R28
+Z97 !s100 9DiA>A=AckRG@2;Ef9n;b2
+Astructural
+R19
+R48
+R20
+R72
+Z98 DEx4 work 16 synth_reg_w_init 0 22 h22e6>0JWO87D^870h2ej0
+l1814
+L1797
+Z99 VldASZfP3K0[OeQ=[gFZ[N2
+R25
+31
+R77
+R78
+R79
+R27
+o-93
+R28
+Z100 !s100 OfH3?mOW8>[JYAFLCL>?L1
+Exlcosim_fli_controller
+R47
+R49
+R50
+l0
+L3
+Z101 V1a^GTeme25lPze<>f554P2
+R25
+31
+o-93
+R28
+Z102 !s100 Aof=OU5jXP@Bfm14]kcZA0
+Aonly
+R59
+31
+xfOa
+l11
+L7
+Z103 Vc8h<QKO?4DmaC@@GWHR>Y1
+R25
+o-93
+R28
+Z104 !s100 F1mc9OL6cPn7^LM^n2]=00
+R56

@@ -1,0 +1,2 @@
+log -r *
+add wave *

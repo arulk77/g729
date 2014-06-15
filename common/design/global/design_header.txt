@@ -1,0 +1,9 @@
+//CGK:AUTO_GENERATED
+//----------------------------------------------------------------
+// (c)2012 Arasan Chip Systems
+//----------------------------------------------------------------
+// Project  : acom 
+// email    : support@arasan.com
+// Desc     : This project is intended to create files that could
+//            be used across multiple projects. This project includes
+//            basic synchronizers, fifos, and portable ram modules
