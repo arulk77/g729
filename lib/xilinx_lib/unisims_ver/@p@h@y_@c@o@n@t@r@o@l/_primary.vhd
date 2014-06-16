@@ -1,0 +1,65 @@
+library verilog;
+use verilog.vl_types.all;
+entity PHY_CONTROL is
+    generic(
+        AO_TOGGLE       : integer := 0;
+        AO_WRLVL_EN     : integer := 0;
+        BURST_MODE      : string  := "FALSE";
+        CLK_RATIO       : integer := 1;
+        CMD_OFFSET      : integer := 0;
+        CO_DURATION     : integer := 0;
+        DATA_CTL_A_N    : string  := "FALSE";
+        DATA_CTL_B_N    : string  := "FALSE";
+        DATA_CTL_C_N    : string  := "FALSE";
+        DATA_CTL_D_N    : string  := "FALSE";
+        DISABLE_SEQ_MATCH: string  := "TRUE";
+        DI_DURATION     : integer := 0;
+        DO_DURATION     : integer := 0;
+        EVENTS_DELAY    : integer := 63;
+        FOUR_WINDOW_CLOCKS: integer := 63;
+        MULTI_REGION    : string  := "FALSE";
+        PHY_COUNT_ENABLE: string  := "FALSE";
+        RD_CMD_OFFSET_0 : integer := 0;
+        RD_CMD_OFFSET_1 : integer := 0;
+        RD_CMD_OFFSET_2 : integer := 0;
+        RD_CMD_OFFSET_3 : integer := 0;
+        RD_DURATION_0   : integer := 0;
+        RD_DURATION_1   : integer := 0;
+        RD_DURATION_2   : integer := 0;
+        RD_DURATION_3   : integer := 0;
+        SYNC_MODE       : string  := "FALSE";
+        WR_CMD_OFFSET_0 : integer := 0;
+        WR_CMD_OFFSET_1 : integer := 0;
+        WR_CMD_OFFSET_2 : integer := 0;
+        WR_CMD_OFFSET_3 : integer := 0;
+        WR_DURATION_0   : integer := 0;
+        WR_DURATION_1   : integer := 0;
+        WR_DURATION_2   : integer := 0;
+        WR_DURATION_3   : integer := 0
+    );
+    port(
+        AUXOUTPUT       : out    vl_logic_vector(3 downto 0);
+        INBURSTPENDING  : out    vl_logic_vector(3 downto 0);
+        INRANKA         : out    vl_logic_vector(1 downto 0);
+        INRANKB         : out    vl_logic_vector(1 downto 0);
+        INRANKC         : out    vl_logic_vector(1 downto 0);
+        INRANKD         : out    vl_logic_vector(1 downto 0);
+        OUTBURSTPENDING : out    vl_logic_vector(3 downto 0);
+        PCENABLECALIB   : out    vl_logic_vector(1 downto 0);
+        PHYCTLALMOSTFULL: out    vl_logic;
+        PHYCTLEMPTY     : out    vl_logic;
+        PHYCTLFULL      : out    vl_logic;
+        PHYCTLREADY     : out    vl_logic;
+        MEMREFCLK       : in     vl_logic;
+        PHYCLK          : in     vl_logic;
+        PHYCTLMSTREMPTY : in     vl_logic;
+        PHYCTLWD        : in     vl_logic_vector(31 downto 0);
+        PHYCTLWRENABLE  : in     vl_logic;
+        PLLLOCK         : in     vl_logic;
+        READCALIBENABLE : in     vl_logic;
+        REFDLLLOCK      : in     vl_logic;
+        RESET           : in     vl_logic;
+        SYNCIN          : in     vl_logic;
+        WRITECALIBENABLE: in     vl_logic
+    );
+end PHY_CONTROL;

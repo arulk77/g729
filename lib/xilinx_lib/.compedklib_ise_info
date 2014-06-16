@@ -1,0 +1,13 @@
+######################################################################################
+## Please do not modify the contents of this file. Any changing of this file
+## might corrupt the tools.
+##
+## Created by: /home/aruls/tools/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/compxlib
+## Created time: Wed Jun 11 15:33:47 2014
+##
+######################################################################################
+ISE_VERSION: 14.7
+EDK_VERSION: 14.7
+SIMULATOR: mti_se
+HDL_TYPE: vhdl verilog
+SIM_VER: Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009

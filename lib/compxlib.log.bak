@@ -22,7 +22,7 @@ Scheduling library installation & compilation for libraries: all
 
 Signature:-
 ------------------------------------------------------------------------------
-/home/tools/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/compxlib -64bit -arch all -lib all -s mti_se -dir xilinx_lib 
+/home/tools/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/compxlib -arch all -lib all -s mti_se -dir xilinx_lib 
 ------------------------------------------------------------------------------
 
 Setting up the simulator 'mti_se' for compilation ...
@@ -37,7 +37,6 @@ Assigning the netlist files to the hierarchies for EDK library ...
 Compiling Xilinx HDL Libraries for 'mti_se' simulator
 Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
 Language => 'vhdl,verilog'
-The modelsim.ini file not found, create it.
 Output directory => '/home/aruls/projects/phd/g729/lib/xilinx_lib'
 
 WARNING:Compxlib:312 - Output directory '/home/aruls/projects/phd/g729/lib/xilinx_lib' does not exist, it will be created.
@@ -52,7 +51,7 @@ BEGIN_COMPILATION_MESSAGES(mti_se:verilog:secureip)
 Modifying modelsim.ini
 
 Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
-** Error: (vlog-1902) Option "-64" is either unknown, requires an argument, or was given with a bad argument.
+** Error: (vlog-1902) Option "-32" is either unknown, requires an argument, or was given with a bad argument.
 Use the -help option for complete vlog usage.
 
 
@@ -74,7 +73,7 @@ BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:unisim)
 Modifying modelsim.ini
 
 Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
-** Error: (vcom-1902) Option "-64" is either unknown, requires an argument, or was given with a bad argument.
+** Error: (vcom-1902) Option "-32" is either unknown, requires an argument, or was given with a bad argument.
 Use the -help option for complete vcom usage.
 
 
@@ -91,7 +90,7 @@ BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:unimacro)
 Modifying modelsim.ini
 
 Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
-** Error: (vcom-1902) Option "-64" is either unknown, requires an argument, or was given with a bad argument.
+** Error: (vcom-1902) Option "-32" is either unknown, requires an argument, or was given with a bad argument.
 Use the -help option for complete vcom usage.
 
 
@@ -104,46 +103,3 @@ INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES
 
 
 Library vhdl.unisim:vhdl.secureip_vhdl_unisim will be compiled, because no precompiled info.
---> Compiling vhdl.unisim:vhdl.secureip_vhdl_unisim library ...
-    > vhdl.unisim:vhdl.secureip_vhdl_unisim library compiled from /home/tools/Xilinx/14.7/ISE_DS/ISE/vhdl/src/unisims/secureip
-    > vhdl.unisim:vhdl.secureip_vhdl_unisim library compiled to /home/aruls/projects/phd/g729/lib/xilinx_lib/unisim
-==============================================================================
-BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:secureip_vhdl_unisim)
-Modifying modelsim.ini
-
-Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
-** Error: (vcom-1902) Option "-64" is either unknown, requires an argument, or was given with a bad argument.
-Use the -help option for complete vcom usage.
-
-
-END_COMPILATION_MESSAGES(mti_se:vhdl:secureip_vhdl_unisim)
-==============================================================================
-    > Log file '/home/aruls/projects/phd/g729/lib/xilinx_lib/unisim/.cxl.vhdl.secureip_vhdl_unisim.unisim.lin.log' generated
-compxlib[vhdl.unisim:vhdl.secureip_vhdl_unisim]: 1 error(s), 0 warning(s)
-
-INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:secureip_vhdl_unisim)' and 'END_COMPILATION_MESSAGES(mti_se:vhdl:secureip_vhdl_unisim)' in the log file compxlib.log for details of compilation error(s).
-
-compxlib[vhdl.unisim]: 3 error(s), 0 warning(s), 18.18 % complete
-
-
-INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:unisim)' and 'END_COMPILATION_MESSAGES(mti_se:vhdl:unisim)' in the log file compxlib.log for details of compilation error(s).
-
-
-Library verilog.unisim will be compiled, because no precompiled info.
---> Compiling verilog.unisim library ...
-    > verilog.unisim library compiled from /home/tools/Xilinx/14.7/ISE_DS/ISE/verilog/src/unisims
-    > verilog.unisim library compiled to /home/aruls/projects/phd/g729/lib/xilinx_lib/unisims_ver
-==============================================================================
-BEGIN_COMPILATION_MESSAGES(mti_se:verilog:unisim)
-Modifying modelsim.ini
-
-Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
-** Error: (vlog-1902) Option "-64" is either unknown, requires an argument, or was given with a bad argument.
-Use the -help option for complete vlog usage.
-
-
-END_COMPILATION_MESSAGES(mti_se:verilog:unisim)
-==============================================================================
-    > Log file '/home/aruls/projects/phd/g729/lib/xilinx_lib/unisims_ver/.cxl.verilog.unisim.unisims_ver.lin.log' generated
-
-Library verilog.unisim:verilog.unimacro will be compiled, because no precompiled info.
