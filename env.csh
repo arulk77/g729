@@ -7,7 +7,6 @@ git config user.name "aruls"
 ## This script is to setup the environment for the project
 setenv PROJ_DIR "${PWD}"
 setenv CG_SEARCH_PATH "./:$PROJ_DIR/design"
-setenv PATH "${PATH}:${PROJ_DIR}/bin"
 
 ## project specifi paths
 alias cdp   "cd ${PROJ_DIR}"
@@ -16,6 +15,11 @@ alias cdd   "cd ${PROJ_DIR}/matlab/oop"
 alias cds   "cd ${PROJ_DIR}/matlab/sim"
 alias cddoc "cd ${PROJ_DIR}/docs"
 alias cdb   "cd ${PROJ_DIR}/bin"
+
+## Perl script path
+setenv PATH "${PATH}:${PROJ_DIR}/bin:${PROJ_DIR}/common/bin"
+setenv MK_INC_DIR "${PROJ_DIR}/common/make"
+setenv HDR_DIR "${PROJ_DIR}/make"
 
 ## Other paths
 alias gvim 'gvim -c "set tags=vim.tags" '

@@ -82,3 +82,4 @@
 # Simulation halt requested by foreign interface.
 # Simulation Breakpoint: Simulation halt requested by foreign interface.
 # MACRO ./g729_encoder_verilog_test_cosim_cw.tcl PAUSED at line 161
+exit -f
