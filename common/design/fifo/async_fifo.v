@@ -35,7 +35,7 @@ module async_fifo
   output   wire [RAM_DATA_WIDTH-1:0]           ram_wr_data                   , // Write data to the RAM
   output   wire                                ram_wr_en                     , // Write data en
   output   wire [RAM_ADDR_WIDTH-1:0]           ram_rd_addr                   , // Read address to the RAM
-  input    wire [RAM_ADDR_WIDTH-1:0]           ram_rd_data                   , // Read data from the RAM
+  input    wire [RAM_DATA_WIDTH-1:0]           ram_rd_data                   , // Read data from the RAM
   output   wire                                ram_rd_en                       // Read enable to the RAM
   // CGKE:PORTS
 );

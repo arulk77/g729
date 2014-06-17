@@ -6,7 +6,7 @@
 // email    : aruls.dsp@gmail.com 
 module ads_async_fifo 
 # (
- parameter RAM_ADDR_WIDTH                 = 12        , // Address width for the RAM
+ parameter RAM_ADDR_WIDTH                 = 10        , // Address width for the RAM
  parameter RAM_DATA_WIDTH                 = 32          // Data width for the samples
 )
 (
@@ -32,7 +32,7 @@ wire           [RAM_ADDR_WIDTH-1:0] portb_fifo_count              ;
 wire           [RAM_ADDR_WIDTH-1:0] ram_wr_addr                   ;
 wire           [RAM_DATA_WIDTH-1:0] ram_wr_data                   ;
 wire           [RAM_ADDR_WIDTH-1:0] ram_rd_addr                   ;
-wire           [RAM_ADDR_WIDTH-1:0] ram_rd_data                   ;
+wire           [RAM_DATA_WIDTH-1:0] ram_rd_data                   ;
 async_fifo  #( 
   .RAM_ADDR_WIDTH           (RAM_ADDR_WIDTH      ),// The address bus width for the Tx and Rx RAM used
   .RAM_DATA_WIDTH           (RAM_DATA_WIDTH      ) // The RAM data width is fixed to be 32 bit wide
@@ -63,7 +63,7 @@ INST_async_fifo (
   .ram_wr_data                    ( ram_wr_data                   [RAM_DATA_WIDTH-1:0]          ), // Write data to the RAM
   .ram_wr_en                      ( ram_wr_en                                                   ), // Write data en
   .ram_rd_addr                    ( ram_rd_addr                   [RAM_ADDR_WIDTH-1:0]          ), // Read address to the RAM
-  .ram_rd_data                    ( ram_rd_data                   [RAM_ADDR_WIDTH-1:0]          ), // Read data from the RAM
+  .ram_rd_data                    ( ram_rd_data                   [RAM_DATA_WIDTH-1:0]          ), // Read data from the RAM
   .ram_rd_en                      ( ram_rd_en                                                   )  // Read enable to the RAM
   // CGKE:PORTS
 );

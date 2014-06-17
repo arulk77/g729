@@ -11,7 +11,7 @@
   <Created>2012-11-23T06:28:53Z</Created>
   <LastSaved>2013-04-30T01:40:01Z</LastSaved>
   <Company>Enthira</Company>
-  <Version>12.00</Version>
+  <Version>14.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <Colors>
@@ -144,52 +144,52 @@
    <Protection/>
   </Style>
   <Style ss:ID="s62">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
   </Style>
   <Style ss:ID="s63">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
-  </Style>
-  <Style ss:ID="s64">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
-    ss:Bold="1"/>
-   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
-  </Style>
-  <Style ss:ID="s65">
-   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
-    ss:Bold="1"/>
-   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
-  </Style>
-  <Style ss:ID="s66">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
-   <Borders/>
-   <Interior/>
-  </Style>
-  <Style ss:ID="s67">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
-   <Interior/>
-  </Style>
-  <Style ss:ID="s68">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
-   <Interior/>
-  </Style>
-  <Style ss:ID="s69">
-   <Interior/>
-  </Style>
-  <Style ss:ID="s70">
    <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
     ss:Bold="1"/>
    <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
   </Style>
-  <Style ss:ID="s71">
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s68">
    <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
    <Borders/>
    <Interior/>
   </Style>
-  <Style ss:ID="s72">
+  <Style ss:ID="s69">
    <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s72">
+   <Interior/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Interior/>
   </Style>
  </Styles>
  <Worksheet ss:Name="PORTS">
@@ -200,195 +200,196 @@
    <Column ss:AutoFitWidth="0" ss:Width="177"/>
    <Column ss:AutoFitWidth="0" ss:Width="81"/>
    <Column ss:AutoFitWidth="0" ss:Width="368.25"/>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">CGKS:PORTS</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="18.75">
-    <Cell ss:StyleID="s64"><Data ss:Type="String">Port Name</Data></Cell>
-    <Cell ss:StyleID="s64"><Data ss:Type="String">Direction</Data></Cell>
-    <Cell ss:StyleID="s64"><Data ss:Type="String">Width</Data></Cell>
-    <Cell ss:StyleID="s64"><Data ss:Type="String">Clk</Data></Cell>
-    <Cell ss:StyleID="s64"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Port Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Direction</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Width</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Clk</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Description</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:MergeAcross="4" ss:StyleID="s70"><Data ss:Type="String">CLK A interface signals (write clock)</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="4" ss:StyleID="s63"><Data ss:Type="String">CLK A interface signals (write clock)</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">In</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">PortA clock interface</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">In</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PortA clock interface</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">porta_rst_n</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">In</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">NA</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">Reset to the porta module</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">porta_rst_n</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">In</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Reset to the porta module</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">porta_srst_n</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">In</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">Reset to the porta module (Synchronous)</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">porta_srst_n</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">In</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Reset to the porta module (Synchronous)</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">porta_wr_en</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">In</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">Write enable for the asynchronous fifo</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">porta_wr_en</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">In</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Write enable for the asynchronous fifo</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">porta_wr_data</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">In</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">RAM_DATA_WIDTH</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Data to be written to the FIFO</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">porta_wr_data</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">In</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">RAM_DATA_WIDTH</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Data to be written to the FIFO</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
-    <Cell ss:StyleID="s62"><Data ss:Type="String">porta_fifo_full</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Out</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">fifo full condition synchronous to the porta clk</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">porta_fifo_empty</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Out</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">fifo empty conditio synchronous to the porta clk</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">porta_fifo_count</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Out</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Fifo count synchronous to the porta clock</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s62"/>
-    <Cell ss:StyleID="s62"/>
-    <Cell ss:StyleID="s62"/>
-    <Cell ss:StyleID="s62"/>
-    <Cell ss:StyleID="s62"/>
-   </Row>
-   <Row ss:Height="31.5">
-    <Cell ss:StyleID="s70"><Data ss:Type="String">CLK B interface signals (read clock)</Data></Cell>
-    <Cell ss:StyleID="s70"/>
-    <Cell ss:StyleID="s70"/>
-    <Cell ss:StyleID="s70"/>
-    <Cell ss:StyleID="s70"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">In</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">Portb clock interface</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_rst_n</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">In</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">NA</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">Reset to the portb module</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_srst_n</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">In</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">Reset to the portb module (Synchronous)</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_rd_en</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">In</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">Write enable for the asynchronous fifo</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">portb_rd_data</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Out</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">RAM_DATA_WIDTH</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Data to be written to the FIFO</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">portb_fifo_full</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Out</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">fifo full condition synchronous to the portb clk</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">portb_fifo_empty</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Out</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">fifo empty conditio synchronous to the portb clk</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">portb_fifo_count</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Out</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">Fifo count synchronous to the portb clock</Data></Cell>
-   </Row>
-   <Row ss:Index="23">
-    <Cell ss:MergeAcross="4" ss:StyleID="s70"><Data ss:Type="String">RAM Interface</Data></Cell>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">ram_wr_addr</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">porta_fifo_full</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">fifo full condition synchronous to the porta clk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">porta_fifo_empty</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">fifo empty conditio synchronous to the porta clk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">porta_fifo_count</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Fifo count synchronous to the porta clock</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="31.5">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">CLK B interface signals (read clock)</Data></Cell>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">In</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Portb clock interface</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_rst_n</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">In</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Reset to the portb module</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_srst_n</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">In</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Reset to the portb module (Synchronous)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_rd_en</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">In</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Write enable for the asynchronous fifo</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">portb_rd_data</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">RAM_DATA_WIDTH</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Data to be written to the FIFO</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">portb_fifo_full</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">fifo full condition synchronous to the portb clk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">portb_fifo_empty</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">fifo empty conditio synchronous to the portb clk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">portb_fifo_count</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Fifo count synchronous to the portb clock</Data></Cell>
+   </Row>
+   <Row ss:Index="23" ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="4" ss:StyleID="s63"><Data ss:Type="String">RAM Interface</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ram_wr_addr</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Out</Data></Cell>
     <Cell><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
-    <Cell ss:StyleID="s71"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Write address to the RAM</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Write address to the RAM</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">ram_wr_data</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ram_wr_data</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Out</Data></Cell>
     <Cell><Data ss:Type="String">RAM_DATA_WIDTH</Data></Cell>
-    <Cell ss:StyleID="s71"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Write data to the RAM</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Write data to the RAM</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">ram_wr_en</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
-    <Cell ss:StyleID="s72"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s71"><Data ss:Type="String">porta_clk</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Write data en</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ram_wr_en</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Out</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">porta_clk</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Write data en</Data></Cell>
    </Row>
-   <Row ss:Index="28">
-    <Cell ss:StyleID="s66"><Data ss:Type="String">ram_rd_addr</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
+   <Row ss:Index="28" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ram_rd_addr</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Out</Data></Cell>
     <Cell><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
-    <Cell ss:StyleID="s71"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Read address to the RAM</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Read address to the RAM</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">ram_rd_data</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">In</Data></Cell>
-    <Cell><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
-    <Cell ss:StyleID="s71"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Read data from the RAM</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ram_rd_data</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">In</Data></Cell>
+    <Cell><Data ss:Type="String">RAM_DATA_WIDTH</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Read data from the RAM</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">ram_rd_en</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Out</Data></Cell>
-    <Cell ss:StyleID="s72"><Data ss:Type="Number">1</Data></Cell>
-    <Cell ss:StyleID="s71"><Data ss:Type="String">portb_clk</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Read enable to the RAM</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ram_rd_en</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Out</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">portb_clk</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Read enable to the RAM</Data></Cell>
    </Row>
-   <Row ss:Index="32">
+   <Row ss:Index="32" ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">CGKE:PORTS</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
    <Print>
     <ValidPrinterInfo/>
     <HorizontalResolution>-4</HorizontalResolution>
@@ -398,7 +399,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>11</ActiveRow>
+     <ActiveRow>28</ActiveRow>
      <ActiveCol>2</ActiveCol>
     </Pane>
    </Panes>
@@ -412,51 +413,52 @@
    <Column ss:AutoFitWidth="0" ss:Width="150"/>
    <Column ss:AutoFitWidth="0" ss:Width="111"/>
    <Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="288.75"/>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">CGKS:PARAM</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Parameter Name</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Default</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Type</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Max</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Description</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">nc</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Parameter Name</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Default</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Type</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Max</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">nc</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">12</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Integer</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">32</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">The address bus width for the Tx and Rx RAM used</Data></Cell>
-    <Cell ss:StyleID="s67"><Data ss:Type="String">param</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Integer</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">The address bus width for the Tx and Rx RAM used</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">param</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">RAM_DATA_WIDTH</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">32</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Integer</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">32</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">The RAM data width is fixed to be 32 bit wide</Data></Cell>
-    <Cell ss:StyleID="s67"><Data ss:Type="String">param</Data></Cell>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">RAM_DATA_WIDTH</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Integer</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">The RAM data width is fixed to be 32 bit wide</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">param</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s66"/>
-    <Cell ss:StyleID="s66"/>
-    <Cell ss:StyleID="s66"/>
-    <Cell ss:StyleID="s66"/>
-    <Cell ss:StyleID="s66"/>
-    <Cell ss:StyleID="s69"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s72"/>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">CGKE:PARAM</Data></Cell>
-    <Cell ss:StyleID="s68"/>
-    <Cell ss:StyleID="s68"/>
-    <Cell ss:StyleID="s68"/>
-    <Cell ss:StyleID="s68"/>
-    <Cell ss:StyleID="s69"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="String">CGKE:PARAM</Data></Cell>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s72"/>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
    <Panes>
     <Pane>
      <Number>3</Number>
