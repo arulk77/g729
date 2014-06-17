@@ -172,7 +172,7 @@ assign rd_addr = rd_ptr_bin[RAM_ADDR_WIDTH-1:0];
 //--------------------------------------------------------------
 // Binary next read pointer logic
 //--------------------------------------------------------------
-assign nxt_rd_ptr_bin = portb_rd_en ? (rd_ptr_bin + 1) : rd_ptr_bin; 
+assign nxt_rd_ptr_bin = portb_rd_en & (~portb_fifo_empty) ? (rd_ptr_bin + 1) : rd_ptr_bin; 
 
 //--------------------------------------------------------------
 // Gray counter value for the next binary ptr

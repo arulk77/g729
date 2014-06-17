@@ -16,7 +16,7 @@ $(DEPENDENT_DIR) ::
 ## Add the dependency for the top file
 *.v:: $(DEPENDENT_FILES)
 
-hp_filter.v:: dwn_sampler.v 
+ads_async_fifo.v:: 
 
 ## After executing the dependent directo
 include ${MK_INC_DIR}/Makefile.cg

@@ -1,4 +1,4 @@
-DIR_LIST := ./hpf ./g729_enc
+DIR_LIST := ./hpf ./fifo
 
 .PHONY:: $(DIR_LIST)
 

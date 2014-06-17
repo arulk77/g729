@@ -6,12 +6,12 @@ git config user.name "aruls"
 
 ## This script is to setup the environment for the project
 setenv PROJ_DIR "${PWD}"
-setenv CG_SEARCH_PATH "./:$PROJ_DIR/design"
+setenv CG_SEARCH_PATH "./:$PROJ_DIR/design:$PROJ_DIR/common/design/fifo"
 
 ## Perl script path
 setenv PATH "${PATH}:${PROJ_DIR}/bin:${PROJ_DIR}/common/bin"
 setenv MK_INC_DIR "${PROJ_DIR}/common/make"
-setenv HDR_DIR "${PROJ_DIR}/make"
+setenv HDR_DIR "${PROJ_DIR}/common/make"
 
 ## Other paths
 alias gvim 'gvim -c "set tags=vim.tags" '
