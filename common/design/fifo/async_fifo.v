@@ -46,12 +46,12 @@ module async_fifo
 // Function to return a binary value for a gray coded value
 // ---------------------------------------------------------------------
 parameter GW = RAM_ADDR_WIDTH;
-function [GW-1:0] gray2bin;
-input 	[GW-1:0]  gray;
+function [GW:0] gray2bin;
+input 	[GW:0]  gray;
 integer i;
-reg 	[GW-1:0] shifted_gray;
+reg 	[GW:0] shifted_gray;
 begin
-   for (i=0;i<GW;i=i+1) begin
+   for (i=0;i<=GW;i=i+1) begin
       shifted_gray = gray >> i;
       gray2bin[i] = ^shifted_gray; // XOR reduce operator
    end
@@ -80,6 +80,8 @@ reg [RAM_ADDR_WIDTH : 0] m_wr_ptr_gray_rd_dm;
 reg [RAM_ADDR_WIDTH : 0] s_wr_ptr_gray_rd_dm;
 reg [RAM_ADDR_WIDTH : 0] m_rd_ptr_gray_wr_dm;
 reg [RAM_ADDR_WIDTH : 0] s_rd_ptr_gray_wr_dm;
+reg [RAM_ADDR_WIDTH : 0] s_rd_ptr_bin_wr_dm;
+reg [RAM_ADDR_WIDTH : 0] s_wr_ptr_bin_rd_dm;
 
 wire [RAM_ADDR_WIDTH : 0] nxt_wr_ptr_bin;
 wire [RAM_ADDR_WIDTH : 0] nxt_wr_ptr_bin_shift;
@@ -139,7 +141,7 @@ always @(posedge clk_wr or negedge rst_wr_n) begin
     m_rd_ptr_gray_wr_dm <= rd_ptr_gray; 
     s_rd_ptr_gray_wr_dm <= m_rd_ptr_gray_wr_dm; 
   end
-end
+end // always @ (posedge clk_wr or negedge rst_wr_n)
 
 assign porta_fifo_full = (s_rd_ptr_gray_wr_dm[RAM_ADDR_WIDTH]     != wr_ptr_gray[RAM_ADDR_WIDTH]) && 
                          (s_rd_ptr_gray_wr_dm[RAM_ADDR_WIDTH-1]   != wr_ptr_gray[RAM_ADDR_WIDTH-1]) && 
@@ -147,9 +149,16 @@ assign porta_fifo_full = (s_rd_ptr_gray_wr_dm[RAM_ADDR_WIDTH]     != wr_ptr_gray
 
 assign porta_fifo_empty = (s_rd_ptr_gray_wr_dm == wr_ptr_gray) ? 1'b1 : 1'b0;
 
+   // Calculate the difference in the pointer
+   reg [RAM_ADDR_WIDTH-1:0] diff_cnt_porta;
+ always @(*) begin
+    s_rd_ptr_bin_wr_dm = gray2bin(s_rd_ptr_gray_wr_dm);
+    diff_cnt_porta     =  wr_ptr_bin[RAM_ADDR_WIDTH-1:0] - s_rd_ptr_bin_wr_dm[RAM_ADDR_WIDTH-1:0];
+ end
+
 assign porta_fifo_count = porta_fifo_empty ? {RAM_ADDR_WIDTH-1{1'b0}} : 
 			  porta_fifo_full  ? {RAM_ADDR_WIDTH-1{1'b1}} :
-			  wr_ptr_bin - gray2bin(s_rd_ptr_gray_wr_dm[RAM_ADDR_WIDTH-1:0]);
+                          diff_cnt_porta;
    
 //-----------------> Write pointer clock doamin <-----------------------
 
@@ -207,7 +216,7 @@ always @(posedge clk_rd or negedge rst_rd_n) begin
     m_wr_ptr_gray_rd_dm <= wr_ptr_gray; 
     s_wr_ptr_gray_rd_dm <= m_wr_ptr_gray_rd_dm; 
   end
-end
+end // always @ (posedge clk_rd or negedge rst_rd_n)
 
 // FIFO empty conditio in read domain
 assign empty_rd_dm      = (s_wr_ptr_gray_rd_dm [RAM_ADDR_WIDTH:0] == rd_ptr_gray[RAM_ADDR_WIDTH:0]) ? 1'b1 : 1'b0; 
@@ -215,11 +224,18 @@ assign empty_rd_dm      = (s_wr_ptr_gray_rd_dm [RAM_ADDR_WIDTH:0] == rd_ptr_gray
 assign portb_fifo_empty = empty_rd_dm; 
 assign portb_fifo_full  = (s_wr_ptr_gray_rd_dm[RAM_ADDR_WIDTH] != rd_ptr_gray[RAM_ADDR_WIDTH]) &&
                           (s_wr_ptr_gray_rd_dm[RAM_ADDR_WIDTH-1] != rd_ptr_gray[RAM_ADDR_WIDTH-1]) &&
-                          (s_wr_ptr_gray_rd_dm[RAM_ADDR_WIDTH-2:0] == rd_ptr_gray[RAM_ADDR_WIDTH-2:0]) ? 1'b1 : 1'b0; 
+                          (s_wr_ptr_gray_rd_dm[RAM_ADDR_WIDTH-2:0] == rd_ptr_gray[RAM_ADDR_WIDTH-2:0]) ? 1'b1 : 1'b0;
+
+// Calculate the difference in the pointer
+   reg [RAM_ADDR_WIDTH-1:0] diff_cnt_portb;
+ always @(*) begin
+    s_wr_ptr_bin_rd_dm = gray2bin(s_wr_ptr_gray_rd_dm);
+    diff_cnt_portb     = s_wr_ptr_bin_rd_dm - rd_ptr_bin;
+ end
 
 assign portb_fifo_count = portb_fifo_empty ? {RAM_ADDR_WIDTH-1{1'b0}} : 
 			  portb_fifo_full  ? {RAM_ADDR_WIDTH-1{1'b1}} :
-			  gray2bin(s_wr_ptr_gray_rd_dm[RAM_ADDR_WIDTH-1:0]) - rd_ptr_bin[RAM_ADDR_WIDTH-1:0];
+			  diff_cnt_portb;
    
 //-----------------> Read pointer clock doamin <-----------------------
 

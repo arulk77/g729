@@ -15,12 +15,12 @@ function ads_async_fifo_config(this_block)
 
   % System Generator has to assume that your entity  has a combinational feed through; 
   %   if it  doesn't, then comment out the following line:
-  this_block.tagAsCombinational;
+  %this_block.tagAsCombinational;
 
   this_block.addSimulinkInport('sys_rst_n');
   this_block.addSimulinkInport('hpf_audio_sample');
   this_block.addSimulinkInport('hpf_smp_valid');
-  this_block.addSimulinkInport('ldb_read_en');
+  this_block.addSimulinkInport('lsp_read_en');
 
   this_block.addSimulinkOutport('aff_data_count');
   this_block.addSimulinkOutport('aff_data_full');
@@ -59,11 +59,11 @@ function ads_async_fifo_config(this_block)
 
     this_block.port('hpf_smp_valid').useHDLVector(false);
 
-    if (this_block.port('ldb_read_en').width ~= 1);
-      this_block.setError('Input data type for port "ldb_read_en" must have width=1.');
+    if (this_block.port('lsp_read_en').width ~= 1);
+      this_block.setError('Input data type for port "lsp_read_en" must have width=1.');
     end
 
-    this_block.port('ldb_read_en').useHDLVector(false);
+    this_block.port('lsp_read_en').useHDLVector(false);
 
   % (!) Port 'aff_data_count' appeared to have dynamic type in the HDL
   % --- you must add an appropriate type setting for this port

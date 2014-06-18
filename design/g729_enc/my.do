@@ -1,2 +1,2 @@
 log -r *
-add wave *
+do ./wave.do

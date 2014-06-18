@@ -132,7 +132,7 @@
   <WindowTopX>2295</WindowTopX>
   <WindowTopY>1635</WindowTopY>
   <TabRatio>500</TabRatio>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -298,7 +298,7 @@
     <Cell ss:StyleID="s67"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"><Data ss:Type="String">ldb_read_en</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">lsp_read_en</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="String">In</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="String">sys_clk</Data></Cell>
@@ -395,7 +395,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>14</ActiveRow>
+     <ActiveRow>17</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -586,7 +586,6 @@
     <HorizontalResolution>-4</HorizontalResolution>
     <VerticalResolution>-4</VerticalResolution>
    </Print>
-   <Selected/>
    <Panes>
     <Pane>
      <Number>3</Number>
@@ -603,95 +602,97 @@
    x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="15.75">
    <Column ss:AutoFitWidth="0" ss:Width="211.5"/>
    <Column ss:AutoFitWidth="0" ss:Width="124.5"/>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">CGKS:INST_async_fifo</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Module</Data></Cell>
     <Cell><Data ss:Type="String">async_fifo</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">Parameter</Data></Cell>
     <Cell ss:StyleID="s73"><Data ss:Type="String">Map</Data></Cell>
     <Cell ss:StyleID="s73"><Data ss:Type="String">nc</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
     <Cell><Data ss:Type="String">RAM_ADDR_WIDTH</Data></Cell>
     <Cell><Data ss:Type="String">param</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">RAM_DATA_WIDTH</Data></Cell>
     <Cell><Data ss:Type="String">RAM_DATA_WIDTH</Data></Cell>
     <Cell><Data ss:Type="String">param</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">Port</Data></Cell>
     <Cell ss:StyleID="s73"><Data ss:Type="String">Map</Data></Cell>
     <Cell ss:StyleID="s73"><Data ss:Type="String">nc</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">^(.*)</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">&quot;$1&quot;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">porta_clk</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">sys_clk</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">porta_rst_n</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">sys_rst_n</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">portb_clk</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">sys_clk</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">portb_rst_n</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">sys_rst_n</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">porta_wr_en</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">hpf_smp_valid</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">porta_wr_data</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">hpf_audio_sample</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">portb_rd_en</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">ldb_read_en</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">lsp_read_en</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">portb_rd_data</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">aff_read_data</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">porta_srst_n</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">1'b1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">portb_srst_n</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">1'b1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s74"/>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s74"/>
    </Row>
-   <Row>
-    <Cell ss:Index="2" ss:StyleID="s74"/>
-   </Row>
-   <Row>
-    <Cell ss:Index="2" ss:StyleID="s74"/>
-   </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s75"/>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">CGKE:INST_async_fifo</Data></Cell>
     <Cell ss:StyleID="s74"/>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s74"/>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"/>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s74"/>
    </Row>
   </Table>
@@ -701,10 +702,13 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   <Unsynced/>
+   <Selected/>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>18</ActiveRow>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

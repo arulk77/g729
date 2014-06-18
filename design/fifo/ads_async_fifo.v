@@ -22,7 +22,7 @@ module ads_async_fifo
   output   wire                                aff_data_full                 , // Data full signal
   output   wire                                aff_data_empty                , // empty flag from the fifo
   output   wire [RAM_DATA_WIDTH-1:0]           aff_read_data                 , // Data width for the data to be read
-  input    wire                                ldb_read_en                     // Read signal from the levinson durby module
+  input    wire                                lsp_read_en                     // Read signal from the levinson durby module
   // CGKE:PORTS
 );
 wire           [RAM_DATA_WIDTH-1:0] porta_wr_data                 ;
@@ -43,7 +43,7 @@ INST_async_fifo (
   // CLK A interface signals (write clock)
   .porta_clk                      ( sys_clk                                                     ), // PortA clock interface
   .porta_rst_n                    ( sys_rst_n                                                   ), // Reset to the porta module
-  .porta_srst_n                   ( porta_srst_n                                                ), // Reset to the porta module (Synchronous)
+  .porta_srst_n                   ( 1'b1                                                        ), // Reset to the porta module (Synchronous)
   .porta_wr_en                    ( hpf_smp_valid                                               ), // Write enable for the asynchronous fifo
   .porta_wr_data                  ( hpf_audio_sample              [RAM_DATA_WIDTH-1:0]          ), // Data to be written to the FIFO
   .porta_fifo_full                ( porta_fifo_full                                             ), // fifo full condition synchronous to the porta clk
@@ -52,8 +52,8 @@ INST_async_fifo (
   // CLK B interface signals (read clock)
   .portb_clk                      ( sys_clk                                                     ), // Portb clock interface
   .portb_rst_n                    ( sys_rst_n                                                   ), // Reset to the portb module
-  .portb_srst_n                   ( portb_srst_n                                                ), // Reset to the portb module (Synchronous)
-  .portb_rd_en                    ( ldb_read_en                                                 ), // Write enable for the asynchronous fifo
+  .portb_srst_n                   ( 1'b1                                                        ), // Reset to the portb module (Synchronous)
+  .portb_rd_en                    ( lsp_read_en                                                 ), // Write enable for the asynchronous fifo
   .portb_rd_data                  ( aff_read_data                 [RAM_DATA_WIDTH-1:0]          ), // Data to be written to the FIFO
   .portb_fifo_full                ( portb_fifo_full                                             ), // fifo full condition synchronous to the portb clk
   .portb_fifo_empty               ( portb_fifo_empty                                            ), // fifo empty conditio synchronous to the portb clk
@@ -79,7 +79,6 @@ INST_async_fifo (
    end
 
    assign ram_rd_data = portb_fifo_empty ? 'd0 : ram[ram_rd_addr];
-
    assign aff_data_full = portb_fifo_full;
    assign aff_data_empty = portb_fifo_empty;
    assign aff_data_count = portb_fifo_count;
