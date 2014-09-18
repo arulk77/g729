@@ -29,3 +29,4 @@ alias setmentor "source /u/tools/digital/setup/mentor"
 alias setxil    "source ~/.user/xilinx.csh" 
 alias setmat    "source /u/aruls/.user/matlab.csh" 
 alias sett      "setxil; setmat; setmentor;"
+
