@@ -1,13 +1,24 @@
 function [r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,r10] = wdwac_comp(Sample,Valid)
 
-% Intialize the constant for the window correlation
+persistent wl;
+
 for n = 0:239
     if n < 200
-        wl(n+1) = 0.54 - (0.46 * cos(2*pi*n/399.0));
+        wl(n+1) = Sample;
     else
-        wl(n+1) = cos(2*pi*(n-200)/159);
+        wl(n+1) = Sample;
+    end
 end
 
+% for n = 0:239
+%     if n < 200
+%         wl(n+1) = 0.54 - (0.46 * wl(n+1));
+%     else
+%         wl(n+1) = wl(n+1);
+%     end
+% end
+
+% Intialize the constant for the window correlation
 for n = 0:239
     s_t(n+1) = wl(n+1) * Sample;
 end
@@ -23,3 +34,5 @@ r7 = wl(7);
 r8 = wl(8);
 r9 = wl(9);
 r10 = wl(10);
+
+
